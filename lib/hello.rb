@@ -3,7 +3,7 @@ def hello_t(array)
   if block_given?
   i = 0
     while i < array.length
-      test = yield (array[i])
+      apple = yield (array[i])
       binding.pry
 
       i = i + 1
