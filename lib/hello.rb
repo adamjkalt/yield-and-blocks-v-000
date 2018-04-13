@@ -13,9 +13,8 @@ end
 end
 
 # call your method here!
-
+binding.pry
 hello_t(["Tim", "Tom", "Jim"]) do |name|
-  binding.pry
   if name.start_with?("T")
     puts "Hi, #{name}"
   end
