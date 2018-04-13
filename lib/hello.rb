@@ -3,7 +3,7 @@ def hello_t(array)
   if block_given?
   i = 0
     while i < array.length
-      apple = yield (array[i])
+      yield (array[i])
       binding.pry
 
       i = i + 1
@@ -20,5 +20,4 @@ hello_t(["Tim", "Tom", "Jim"]) do |name|
   if name.start_with?("T")
     puts "Hi, #{name}"
   end
-  name + "!"
 end
